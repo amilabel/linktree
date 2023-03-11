@@ -1,0 +1,136 @@
+body{
+ background: url('bg16.jpeg') no-repeat center center fixed;
+background-size: cover;
+  background-color: rgba(225, 225, 225, 0.5);
+  /* background: #6F38C5; */
+color: #fff;
+margin: 0;
+padding: 0;
+font-family: "Montserrat";
+
+}
+h1{
+font-size: 30px;
+}
+div{
+  display: flex;
+}
+.center{
+   height: 90vh;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: center;
+}
+  .center {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+p{
+  font-size: 1rem;
+}
+
+a{
+
+  display: inline-block;
+  text-align: center;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+img{
+  width: 100px;
+}
+.c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 680px;
+  background-color: #AD7BE9;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease-out;
+  margin: 20px;
+}
+
+.c:hover {
+  transform: translateY(-5px);
+}
+
+
+
+@keyframes glowing {
+  0% {
+    filter: drop-shadow(0 0 0 #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0 #fff);
+  }
+}
+
+.logo {
+  animation: glowing 2s ease-in-out infinite;
+}
+
+
+
+footer{
+  font-size: 1rem;
+  text-align: center;
+}
+.animated-text {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  50% { color: #AD7BE9; }
+  100% { color: white; }
+}
+ @media screen and (max-width: 700px) {
+.c{
+  height: 60px;
+  width: 400px;
+  margin: 10px;
+  font-size: 14px;
+}
+}
+
+@keyframes shine {
+  0% {
+    color: white;
+    text-shadow: none;
+  }
+  50% {
+    color: white;
+    text-shadow: 0 0 10px white;
+  }
+  100% {
+    color: white;
+    text-shadow: none;
+  }
+}
+
+
+.shining-text {
+  animation: shine 2s linear infinite;
+}
